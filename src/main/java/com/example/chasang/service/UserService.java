@@ -16,13 +16,10 @@ public class UserService {
     private final UserRepository userRepository;
     @Value("${test}")
     String test;
-    @Value("${env.test}")
-    String env;
 
     @PostConstruct
     public void init() {
         System.out.println(test);
-        System.out.println(env);
     }
     public List<User> getUsers() {
         System.out.println(test);
