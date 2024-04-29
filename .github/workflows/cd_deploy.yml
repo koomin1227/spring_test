@@ -35,7 +35,7 @@ jobs:
 
     steps:
       - name: 압축
-        run: zip -r ./capston.zip
+        run: zip -r ./capston.zip .
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
