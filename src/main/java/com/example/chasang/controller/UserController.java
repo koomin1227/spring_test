@@ -19,6 +19,11 @@ public class UserController {
         return userService.getUsers();
     }
 
+    @GetMapping("/test")
+    public String test() {
+        return "hello";
+    }
+
     @GetMapping("/{id}")
     public User getUser(@PathVariable("id") String userId) {
         System.out.println(userId);
