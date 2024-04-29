@@ -28,12 +28,6 @@ jobs:
       - name: 프로젝트 빌드
         run: ./gradlew clean bootjar
 
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-20.04
-
-    steps:
       - name: 압축
         run: zip -r ./capston.zip .
 
